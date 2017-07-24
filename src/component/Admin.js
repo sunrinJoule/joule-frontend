@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import '../style/Button.css';
+import '../style/Admin.css';
 import {
     BrowserRouter as Router,
     Route,

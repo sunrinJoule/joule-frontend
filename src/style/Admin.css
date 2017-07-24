@@ -1,0 +1,11 @@
+.Admin {
+    padding-left: 60px;
+    padding-top: 100px;
+}
+.Admin-subtitle {
+    display: inline-block;
+    width: 150px;
+}
+.Admin-data {
+    color: #c2c2c2;
+}

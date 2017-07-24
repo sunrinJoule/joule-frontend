@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import '../style/Button.css';
+import '../style/Lane.css';
 import {
     BrowserRouter as Router,
     Route,
@@ -17,19 +18,19 @@ export default class Lane extends Component {
         const { name, user, date } = lane;
         return (
             <div className="Lane">
-                <h2 className="Lane-title">{ name }</h2>
-                { user == null ? (
-                  <div className="Lane-emptry">
-                    <button className="button-green">다음</button>
-                  </div>
-                ) : (
-                  <div className="Lane-filled">
-                    <span className="Lane-number">{user}번</span>
-                    <span className="Lane-process-time">{formatTime(Date.now() - date)}</span>
-                    <button className="button-green">o</button>
-                    <button className="button-red">x</button>
-                  </div>
-                ) }
+              <h4 className="Lane-title">{ name }</h4>
+              { user == null ? (
+                <div className="Lane-emptry">
+                  <button className="button-green">다음</button>
+                </div>
+              ) : (
+                <div className="Lane-filled">
+                  <span className="Lane-number">{user}번</span>
+                  <span className="Lane-process-time">{formatTime(Date.now() - date)}</span>
+                  <button className="button-green">o</button>
+                  <button className="button-red">x</button>
+                </div>
+              ) }
             </div>
         )
     }

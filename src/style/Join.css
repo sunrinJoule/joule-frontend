@@ -1,0 +1,26 @@
+.Join {
+    width: 100%;
+}
+.Join-input-box {
+    padding-top: 100px;
+    padding-left: 60px;
+}
+.Join-input {
+    margin-top: 40px;
+    border: 0;
+    border-bottom: 1px solid #c2c2c2;
+    width: 200px;
+}
+.Join-url {
+    font-size: 0.5em;
+}
+.Join-button {
+    margin-top: 40px;
+}
+.Join-card-box {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.Join-card {
+    display: inline-block;
+}
