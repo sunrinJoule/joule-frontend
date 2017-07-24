@@ -12,9 +12,9 @@ export default class Join extends Component {
     render() {
         return (
             <div>
-                <h2>대기열 입장</h2>
-                <input type="text" /><br />
-                <span>https://jou.le/.....</span><br />
+                <h2 className="title">대기열 입장</h2>
+                <input className="input" type="text" /><br />
+                <span className="url">https://jou.le/.....</span><br />
                 <button className="button-green">입장</button>
                 <button className="button-red">취소</button>
                 <WaitingCard />

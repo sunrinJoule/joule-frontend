@@ -11,7 +11,6 @@ export default class Create extends Component {
         return (
             <div className="Create">
                 <h2 className="title">대기열 생성</h2>
-
                 <input type="text" /><br />
                 <span>생성할 대기열의 이름을 입력해주세요</span><br />
                 <input type="text" /><br />

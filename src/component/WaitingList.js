@@ -12,7 +12,7 @@ export default class WaitingList extends Component {
     render() {
         return (
             <div>
-                <h2>대기열 목록</h2>
+                <h2 className="title">대기열 목록</h2>
                 <WaitingCard />
                 <WaitingCard />
             </div>

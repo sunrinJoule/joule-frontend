@@ -28,11 +28,11 @@ export default class Admin extends Component {
         } = this.state;
         return (
             <div>
-                <h2>관리 모드</h2>
-                <span>평균 처리 시간</span>
-                <span>{formatTime(processTime)}</span><br />
-                <span>대기 인원</span>
-                <span>{waitingPeople}명</span><br />
+                <h2 className="title">관리 모드</h2>
+                <span className="subtitle">평균 처리 시간</span>
+                <span className="data">{formatTime(processTime)}</span><br />
+                <span className="subtitle">대기 인원</span>
+                <span className="data">{waitingPeople}명</span><br />
                 <Lane />
                 <Lane />
             </div>

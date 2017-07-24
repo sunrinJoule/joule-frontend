@@ -32,14 +32,14 @@ export default class WaitingCard extends Component {
         } = this.state;
         return (
             <div>
-                <div>
-                    <h2>{waitingTitle}<br />입장 대기열</h2>
+                <div className="title-box">
+                    <h2 className="title">{waitingTitle}<br />입장 대기열</h2>
                 </div>
-                <div>
-                    <h3>{waitingNumber}</h3>
+                <div className="number-box">
+                    <h3 className="number">{waitingNumber}</h3>
                 </div>
-                <span>남은 인원 {remainigPeople} / 남은 시간 약 {remainingTime}분</span><br />
-                <span>대기 시간 {formatTime(waitingTime)}</span>
+                <span className="data">남은 인원 {remainigPeople} / 남은 시간 약 {remainingTime}분</span><br />
+                <span classNmae="data">대기 시간 {formatTime(waitingTime)}</span>
             </div>
         )
     }
