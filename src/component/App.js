@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
-import './Home.css';
+import '../style/App.css';
+import '../style/Home.css';
 import {
     BrowserRouter as Router,
     Route,
@@ -13,6 +13,7 @@ import Create from './Create';
 import Info from './Info';
 import Join from './Join';
 import WaitingList from './WaitingList';
+import Admin from './Admin';
 
 class App extends Component {
     render() {
@@ -24,6 +25,7 @@ class App extends Component {
                     <Route path="/join" component={Join} />
                     <Route path="/info" component={Info} />
                     <Route path="/list" component={WaitingList} />
+                    <Route path="/admin" component={Admin} />
                 </div>
             </Router>
         )

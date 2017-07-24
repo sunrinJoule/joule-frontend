@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import './Home.css';
+import '../style/Home.css';
 import {
     BrowserRouter as Router,
     Route,

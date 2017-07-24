@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
-import './Home.css';
-import './Button.css';
+import '../style/Home.css';
+import '../style/Button.css';
 import {
     BrowserRouter as Router,
     Route,
