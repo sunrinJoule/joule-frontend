@@ -11,7 +11,7 @@ import WaitingCard from './WaitingCard';
 export default class Join extends Component {
     render() {
         return (
-            <div>
+            <div className="Join">
                 <h2 className="title">대기열 입장</h2>
                 <input className="input" type="text" /><br />
                 <span className="url">https://jou.le/.....</span><br />

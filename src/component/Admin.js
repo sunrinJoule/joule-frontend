@@ -27,7 +27,7 @@ export default class Admin extends Component {
             waitingPeople
         } = this.state;
         return (
-            <div>
+            <div className="Admin">
                 <h2 className="title">관리 모드</h2>
                 <span className="subtitle">평균 처리 시간</span>
                 <span className="data">{formatTime(processTime)}</span><br />

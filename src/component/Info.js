@@ -32,7 +32,7 @@ export default class Info extends Component {
             remainigPeople
         } = this.state;
         return (
-            <div>
+            <div className="Info">
                 <h2 className="title">{waitingTitle}<br />입장 대기열</h2>
                 <span className="data">남은 인원 {remainigPeople}명 / 남은 시간 약 {remainingTime}분</span><br />
                 <span className="data">대기 시간 {formatTime(waitingTime)}</span><br />

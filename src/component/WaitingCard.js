@@ -31,7 +31,7 @@ export default class WaitingCard extends Component {
             remainigPeople
         } = this.state;
         return (
-            <div>
+            <div className="WaitingCard">
                 <div className="title-box">
                     <h2 className="title">{waitingTitle}<br />입장 대기열</h2>
                 </div>

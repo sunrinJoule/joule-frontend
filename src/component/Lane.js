@@ -27,7 +27,7 @@ export default class Lane extends Component {
             processTime
         } = this.state;
         return (
-            <div>
+            <div className="Lane">
                 <h2 className="title">{laneNumber}번 창구</h2>
                 <span className="number">{waitingNumber}번</span>
                 <span className="process-time">{formatTime(processTime)}</span>
