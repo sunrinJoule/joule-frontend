@@ -9,31 +9,8 @@ import {
 } from 'react-router-dom';
 
 import Post from './Post';
-
-// class App extends Component {
-//   render() {
-//     return (
-//       <div className="App">
-//         <h1>Joule</h1>
-//         <button><a href="http://www.naver.com">방 생성</a></button>
-//         <br />
-//         <button><a href="http://www.google.com">들어가기</a></button>
-//         <div className="App-header">
-//           <img src={logo} className="App-logo" alt="logo" />
-//           <h2>Welcome to React</h2>
-//         </div>
-//         <p className="App-intro">
-//           To get started, edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <ul>
-//             <Post name={"test post"} key={1} />
-//         </ul>
-//       </div>
-//     );
-//   }
-// }
-//
-// export default App;
+import Home from './Home';
+import Create from './Create';
 
 class App extends Component {
     render() {
@@ -45,30 +22,6 @@ class App extends Component {
                     <Route path="/join" component={Join}/>
                 </div>
             </Router>
-        )
-    }
-}
-
-class Home extends Component {
-    render() {
-        return (
-            <div className="Home">
-                <span className="Home-title">Joule</span><br />
-                <div className="Home-button-field">
-                    <Link to="/create"><button className="Home-button">방생성</button></Link><br />
-                    <Link to="/join"><button className="Home-button">들어가기</button></Link>
-                </div>
-            </div>
-        )
-    }
-}
-
-class Create extends Component {
-    render() {
-        return (
-            <div>
-                <h2>Create</h2>
-            </div>
         )
     }
 }
