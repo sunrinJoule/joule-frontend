@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import '../style/Home.css';
+import '../style/Info.css';
 import '../style/Button.css';
 import {
     BrowserRouter as Router,
@@ -36,8 +36,12 @@ export default class Info extends Component {
                 <h2 className="title">{waitingTitle}<br />입장 대기열</h2>
                 <span className="data">남은 인원 {remainigPeople}명 / 남은 시간 약 {remainingTime}분</span><br />
                 <span className="data">대기 시간 {formatTime(waitingTime)}</span><br />
-                <span className="number">{waitingNumber}</span><br />
-                <button className="button-red">취소</button>
+                <div className="number-box">
+                    <span className="number">{waitingNumber}</span><br />
+                </div>
+                <div className="button-box">
+                    <button className="button button-red">취소</button>
+                </div>
             </div>
         )
     }

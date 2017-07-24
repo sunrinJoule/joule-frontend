@@ -1,0 +1,28 @@
+.Info {
+    width: 100%;
+}
+.title {
+    font-size: 2em;
+    padding-top: 3em;
+    padding-left: 70px;
+}
+.data:first {
+    margin-top: 1em;
+}
+.data {
+    font-size: 0.3em;
+    padding-left: 70px;
+    color: #c2c2c2;
+}
+.number-box {
+    margin-top: 60px;
+    text-align: center;
+}
+.number {
+    font-size: 5em;
+    text-decoration: underline;
+}
+.button-box {
+    text-align: center;
+    margin-top: 50px;
+}
