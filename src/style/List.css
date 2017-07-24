@@ -1,0 +1,13 @@
+.WaitingList {
+    width: 100%;
+}
+.WaitingList-title {
+    padding-left: 40px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.WaitingList-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

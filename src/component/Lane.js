@@ -32,7 +32,7 @@ export default class Lane extends Component {
                 <h4 className="Lane-title">{laneNumber}번 창구</h4>
                 <span className="Lane-number">{waitingNumber}번</span>
                 <span className="Lane-process-time">{formatTime(processTime)}</span>
-                <button className="button-red">x</button>
+                <button className="Lane-button button-red">x</button>
             </div>
         )
     }

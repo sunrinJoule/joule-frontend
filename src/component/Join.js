@@ -22,6 +22,7 @@ export default class Join extends Component {
                 </div>
                 <div className="Join-card-box">
                     <WaitingCard className="Join-card"/>
+                    <WaitingCard className="Join-card"/>
                 </div>
             </div>
         )
