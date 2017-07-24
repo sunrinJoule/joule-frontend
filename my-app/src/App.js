@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './Home.css';
 import {
     BrowserRouter as Router,
     Route,
@@ -37,16 +38,13 @@ import Post from './Post';
 class App extends Component {
     render() {
         return (
-          <Router>
-            <div>
-              <Link to="/create"><button>방생성</button></Link>
-              <Link to="/join"><button>들어가기</button></Link>
-
-              <Route exact path="/" component={Home}/>
-              <Route path="/create" component={Create}/>
-              <Route path="/join" component={Join}/>
-            </div>
-          </Router>
+            <Router>
+                <div>
+                    <Route exact path="/" component={Home}/>
+                    <Route path="/create" component={Create}/>
+                    <Route path="/join" component={Join}/>
+                </div>
+            </Router>
         )
     }
 }
@@ -54,8 +52,12 @@ class App extends Component {
 class Home extends Component {
     render() {
         return (
-            <div>
-                <h2>Home</h2>
+            <div className="Home">
+                <span className="Home-title">Joule</span><br />
+                <div className="Home-button-field">
+                    <Link to="/create"><button className="Home-button">방생성</button></Link><br />
+                    <Link to="/join"><button className="Home-button">들어가기</button></Link>
+                </div>
             </div>
         )
     }

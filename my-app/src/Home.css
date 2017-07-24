@@ -1,0 +1,18 @@
+.Home {
+    text-align: center;
+}
+
+.Home-title {
+    display: inline-block;
+    font-size: 48px;
+    margin-top: 10vh;
+}
+
+.Home-button-field {
+    margin-top: 50vh;
+}
+
+.Home-button {
+    font-size: 24px;
+    margin-top: 20px;
+}
