@@ -29,13 +29,13 @@ class Create extends Component {
             <div className="Create">
                 <form onSubmit={this.handleCreate.bind(this)}>
                     <h2 className="Create-title">대기열 생성</h2>
-                    <input type="text" /><br />
-                    <span>생성할 대기열의 이름을 입력해주세요</span><br />
-                    <input type="text" /><br />
-                    <span>생성할 창구 수를 입력해주세요</span><br />
-                    <span>OTP를 사용합니다<input type="checkbox" /></span><br />
-                    <span>호출<input type="checkbox" /></span><br />
-                    <span>대기열<input type="checkbox" /></span><br />
+                    <input className="Create-input" name="queueName" type="text" /><br />
+                    <span className="Create-description">생성할 대기열의 이름을 입력해주세요</span><br />
+                    <input className="Create-input" name="lane" type="text" /><br />
+                    <span classname="Create-description">생성할 창구 수를 입력해주세요</span><br />
+                    <label><span>OTP를 사용합니다</span><input className="Create-checkbox" name="otp" type="checkbox" /></label><br />
+                    <label><span>호출</span><input className="Create-checkbox" name="call" type="checkbox" /></label><br />
+                    <label><span>대기열</span><input className="Create-checkbox" name="queue" type="checkbox" /></label><br />
                     <button className="button-green">생성</button>
                     <button className="button-red">취소</button>
                 </form>
