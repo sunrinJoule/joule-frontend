@@ -49,6 +49,7 @@ export default function webSocketConnector(endpoint) {
             sentResponse[responseOf] = undefined;
             break;
           }
+          default:
         }
       };
       client.onerror = event => {
@@ -79,13 +80,14 @@ export default function webSocketConnector(endpoint) {
       return promise;
     }
     return next => action => {
-      let prevState = store.getState();
       if (client == null) {
         client = new ReconnectingWebSocket(endpoint);
         handleCreate();
       }
       if (action.type === StateActions.REQUEST) {
         return sendData(action.payload, true);
+      } else if (action.type.startsWith('queue/')) {
+        return sendData(action, true);
       } else {
         return next(action);
       }

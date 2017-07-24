@@ -5,6 +5,7 @@ export default function stateReducer(state = {}, action) {
     case UPDATE:
       // Overwrite everything
       return action.payload;
+    default:
+      return state;
   }
-  return state;
 }

@@ -23,10 +23,10 @@ export const CONFIRM = 'queue/confirm';
 
 export const CONFIRM_BELL = 'queue/confirmBell';
 
-// name, otp, useBells, lanes
+// name, otp, useBells, lanes, notice, paused
 export const create = createAction(CREATE, data => data);
 export const deleteQueue = createAction(DELETE, id => ({ id }));
-// name, otp, useBells
+// name, otp, useBells, notice, paused
 export const update = createAction(UPDATE,
   (id, data) => Object.assign({}, data, { id }));
 

@@ -25,6 +25,7 @@ class App extends Component {
                     <Route path="/info" component={Info} />
                     <Route path="/list" component={WaitingList} />
                     <Route path="/admin" component={Admin} />
+                    <Route path="/admin/:queueId" component={Admin} />
                 </div>
             </Router>
         )
