@@ -49,12 +49,11 @@ export default class WaitingCard extends Component {
             <div className="WaitingCard">
                 <div className="WaitingCard-title-box">
                     <h2 className="WaitingCard-title">
-                        <span className="WaitingCard-first">{waitingTitle}</span>
-                        <span className="WaitingCard-second">입장 대기열</span>
+                        {waitingTitle} asdasda adasdasd awdad awdawdaw awd
                     </h2>
                 </div>
                 <div className="WaitingCard-number-box">
-                    <h3 className="WaitingCard-number">{waitingNumber}</h3>
+                    <span className="WaitingCard-number">{waitingNumber}</span>
                 </div>
                 <br />
                 {waitingStatement(waitingState, this.state)}
