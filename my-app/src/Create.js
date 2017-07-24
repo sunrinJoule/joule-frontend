@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import './Home.css';
+import './Button.css';
 import {
     BrowserRouter as Router,
     Route,
@@ -19,8 +20,8 @@ export default class Create extends Component {
                 <span>OTP를 사용합니다<input type="checkbox" /></span><br />
                 <span>호출<input type="checkbox" /></span><br />
                 <span>대기열<input type="checkbox" /></span><br />
-                <button>생성</button>
-                <button>취소</button>
+                <button className="button-green">생성</button>
+                <button className="button-red">취소</button>
             </div>
         )
     }

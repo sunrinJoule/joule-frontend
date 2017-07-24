@@ -10,15 +10,17 @@ import {
 import Post from './Post';
 import Home from './Home';
 import Create from './Create';
+import Info from './Info';
 
 class App extends Component {
     render() {
         return (
             <Router>
                 <div>
-                    <Route exact path="/" component={Home}/>
-                    <Route path="/create" component={Create}/>
-                    <Route path="/join" component={Join}/>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/create" component={Create} />
+                    <Route path="/join" component={Join} />
+                    <Route path="/info" component={Info} />
                 </div>
             </Router>
         )

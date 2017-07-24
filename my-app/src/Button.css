@@ -1,0 +1,18 @@
+.button-green {
+    background-color: white;
+    color: #8BD072;
+    border-color: #8BD072;
+    border-radius: 25px;
+    font-size: 12px;
+    width: 60px;
+    border: 1px solid;
+}
+.button-red {
+    background-color: white;
+    color: #EA7070;
+    border-color: #EA7070;
+    border-radius: 25px;
+    font-size: 12px;
+    width: 60px;
+    border: 1px solid;
+}
