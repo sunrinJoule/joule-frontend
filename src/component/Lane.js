@@ -14,14 +14,14 @@ function formatTime(time) {
 
 export default class Lane extends Component {
     render() {
-        const { id, lane } = this.props;
+        const { id, lane, canNext } = this.props;
         const { name, user, date } = lane;
         return (
             <div className="Lane">
               <h4 className="Lane-title">{ name }</h4>
               { user == null ? (
                 <div className="Lane-emptry">
-                  <button className="button-green">다음</button>
+                  <button className="button-green" disabled={!canNext}>다음</button>
                 </div>
               ) : (
                 <div className="Lane-filled">
@@ -39,4 +39,5 @@ export default class Lane extends Component {
 Lane.propTypes = {
   id: PropTypes.number,
   lane: PropTypes.object,
+  canNext: PropTypes.bool,
 };

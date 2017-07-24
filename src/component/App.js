@@ -22,9 +22,9 @@ class App extends Component {
                     <Route exact path="/" component={Home} />
                     <Route path="/create" component={Create} />
                     <Route path="/join" component={Join} />
-                    <Route path="/info" component={Info} />
                     <Route path="/list" component={WaitingList} />
                     <Route path="/admin/:queueId" component={Admin} />
+                    <Route path="/info/:queueId" component={Info} />
                 </div>
             </Router>
         )

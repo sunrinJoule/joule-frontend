@@ -28,7 +28,7 @@ class Admin extends Component {
                 <span className="Admin-subtitle">대기 인원</span>
                 <span className="Admin-data">{queue.queues.length}명</span><br />
                 { queue.lanes.map((lane, id) => (
-                    <Lane lane={lane} id={id} key={id} />
+                    <Lane lane={lane} id={id} key={id} canNext={queue.queues.length > 0} />
                 ))}
             </div>
         )

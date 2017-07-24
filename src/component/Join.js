@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux';
 import '../style/Button.css';
 import '../style/Join.css';
 import {
@@ -27,3 +28,4 @@ export default class Join extends Component {
         )
     }
 }
+

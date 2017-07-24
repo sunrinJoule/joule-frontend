@@ -16,3 +16,7 @@
     padding: 0.4em 1.5em;
     border: 1px solid;
 }
+button[disabled] {
+    color: #999999;
+    border-color: #999999;
+}
