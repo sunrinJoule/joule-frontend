@@ -2,9 +2,9 @@
     background-color: white;
     color: #8BD072;
     border-color: #8BD072;
-    border-radius: 25px;
-    font-size: 12px;
-    width: 60px;
+    border-radius: 1em;
+    font-size: 1em;
+    padding: 0.4em 1.5em;
     border: 1px solid;
 }
 .button-red {
@@ -12,7 +12,7 @@
     color: #EA7070;
     border-color: #EA7070;
     border-radius: 25px;
-    font-size: 12px;
-    width: 60px;
+    font-size: 1em;
+    padding: 0.4em 1.5em;
     border: 1px solid;
 }
