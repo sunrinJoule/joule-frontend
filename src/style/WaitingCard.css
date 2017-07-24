@@ -1,3 +1,19 @@
-.title {
+.WaitingCard {
+    border-radius: 10px;
+    width: 40vh;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+.WaitingCard-title-box {
+    display: inline-block;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.WaitingCard-title {
     font-size: 1em;
+}
+.WaitingCard-number-box {
+    display: inline-block;
+}
+.WaitingCard-first {
+    white-space: pre-wrap;
 }

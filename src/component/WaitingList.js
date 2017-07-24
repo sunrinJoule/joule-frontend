@@ -14,7 +14,6 @@ export default class WaitingList extends Component {
             <div className="WaitingList">
                 <h2 className="WaitingList-itle">대기열 목록</h2>
                 <WaitingCard />
-                <WaitingCard />
             </div>
         )
     }
