@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import '../style/Button.css';
+import '../style/Admin.css';
 import {
     BrowserRouter as Router,
     Route,
@@ -28,7 +29,7 @@ export default class Admin extends Component {
         } = this.state;
         return (
             <div className="Admin">
-                <h2 className="Admin-title">관리 모드</h2>
+                <h3 className="Admin-title">관리 모드</h3>
                 <span className="Admin-subtitle">평균 처리 시간</span>
                 <span className="Admin-data">{formatTime(processTime)}</span><br />
                 <span className="Admin-subtitle">대기 인원</span>

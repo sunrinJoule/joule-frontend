@@ -1,0 +1,13 @@
+.Lane {
+    width: 100%;
+}
+.Lane-number {
+    display: inline-block;
+    width: 60px;
+}
+.Lane-process-time {
+    color: #c2c2c2;
+}
+.button-red {
+    padding: 0.1em 1.5em;
+}

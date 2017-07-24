@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import * as queueActions from '../action/queue';
 import { connect } from 'react-redux';
 import '../style/Button.css';
+import '../style/Create.css';
 import {
     BrowserRouter as Router,
     Route,
@@ -57,13 +58,13 @@ class Create extends Component {
                             name="lane" type="number" /><br />
                         <span className="Create-description">생성할 창구 수를 입력해주세요</span><br />
                     </label>
-                    <label><span>OTP를 사용합니다</span>
+                    <label><span className="Create-use">OTP를 사용합니다</span>
                         <input className="Create-checkbox"
                             value={otp}
                             onChange={this.handleChange.bind(this, 'otp')}
                             name="otp" type="checkbox" />
                     </label><br />
-                    <label><span>호출 기능을 사용합니다</span>
+                    <label><span className="Create-use">호출 기능을 사용합니다</span>
                         <input className="Create-checkbox"
                             value={useBells}
                             onChange={this.handleChange.bind(this, 'useBells')}

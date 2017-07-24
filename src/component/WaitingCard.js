@@ -49,7 +49,7 @@ export default class WaitingCard extends Component {
             <div className="WaitingCard">
                 <div className="WaitingCard-title-box">
                     <h2 className="WaitingCard-title">
-                        {waitingTitle} asdasda adasdasd awdad awdawdaw awd
+                        {waitingTitle}
                     </h2>
                 </div>
                 <div className="WaitingCard-number-box">

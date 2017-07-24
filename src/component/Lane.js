@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import '../style/Button.css';
+import '../style/Lane.css';
 import {
     BrowserRouter as Router,
     Route,
@@ -28,7 +29,7 @@ export default class Lane extends Component {
         } = this.state;
         return (
             <div className="Lane">
-                <h2 className="Lane-title">{laneNumber}번 창구</h2>
+                <h4 className="Lane-title">{laneNumber}번 창구</h4>
                 <span className="Lane-number">{waitingNumber}번</span>
                 <span className="Lane-process-time">{formatTime(processTime)}</span>
                 <button className="button-red">x</button>
