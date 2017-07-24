@@ -1,0 +1,25 @@
+.Info-title {
+    font-size: 2em;
+    padding-top: 3em;
+    padding-left: 70px;
+}
+.Info-data:first {
+    margin-top: 1em;
+}
+.Info-data {
+    font-size: 0.3em;
+    padding-left: 70px;
+    color: #c2c2c2;
+}
+.Info-number-box {
+    margin-top: 60px;
+    text-align: center;
+}
+.Info-number {
+    font-size: 5em;
+    text-decoration: underline;
+}
+.Info-button-box {
+    text-align: center;
+    margin-top: 50px;
+}

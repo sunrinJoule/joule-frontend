@@ -11,8 +11,8 @@ import WaitingCard from './WaitingCard';
 export default class WaitingList extends Component {
     render() {
         return (
-            <div>
-                <h2>대기열 목록</h2>
+            <div className="WaitingList">
+                <h2 className="WaitingList-itle">대기열 목록</h2>
                 <WaitingCard />
                 <WaitingCard />
             </div>

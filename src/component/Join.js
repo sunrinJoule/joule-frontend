@@ -11,11 +11,11 @@ import WaitingCard from './WaitingCard';
 export default class Join extends Component {
     render() {
         return (
-            <div>
-                <h2>대기열 입장</h2>
-                <input type="text" /><br />
-                <span>https://jou.le/.....</span><br />
-                <button className="button-green">입장</button>
+            <div className="Join">
+                <h2 className="Join-title">대기열 입장</h2>
+                <input className="Join-input" type="text" /><br />
+                <span className="Join-url">https://jou.le/.....</span><br />
+                <button className="Join-button-green">입장</button>
                 <button className="button-red">취소</button>
                 <WaitingCard />
             </div>
