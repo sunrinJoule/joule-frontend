@@ -1,0 +1,18 @@
+.Create {
+    width: 100%;
+    padding-top: 100px;
+    padding-left: 60px;
+}
+.Create-input {
+    border: 0;
+    width: 200px;
+    font-size: 1.5em;
+    border-bottom: 1px solid #c2c2c2;
+}
+.Create-description {
+    font-size: 0.5em;
+    color: #c2c2c2;
+}
+.button-red {
+    margin-left: 20px;
+}

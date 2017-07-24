@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import * as queueActions from '../action/queue';
 import { connect } from 'react-redux';
 import '../style/Button.css';
+import '../style/Create.css';
 import {
     BrowserRouter as Router,
     Route,
@@ -32,10 +33,9 @@ class Create extends Component {
                     <input className="Create-input" name="queueName" type="text" /><br />
                     <span className="Create-description">생성할 대기열의 이름을 입력해주세요</span><br />
                     <input className="Create-input" name="lane" type="text" /><br />
-                    <span classname="Create-description">생성할 창구 수를 입력해주세요</span><br />
-                    <label><span>OTP를 사용합니다</span><input className="Create-checkbox" name="otp" type="checkbox" /></label><br />
-                    <label><span>호출</span><input className="Create-checkbox" name="call" type="checkbox" /></label><br />
-                    <label><span>대기열</span><input className="Create-checkbox" name="queue" type="checkbox" /></label><br />
+                    <span className="Create-description">생성할 창구 수를 입력해주세요</span><br /><br />
+                    <label><span className="Create-use">OTP를 사용합니다</span><input className="Create-checkbox" name="otp" type="checkbox" /></label><br /><br />
+                    <label><span className="Create-use">호출기능을 사용합니다</span><input className="Create-checkbox" name="call" type="checkbox" /></label><br /><br /><br />
                     <button className="button-green">생성</button>
                     <button className="button-red">취소</button>
                 </form>
